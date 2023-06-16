@@ -25,13 +25,13 @@ spaceship_width, spaceship_height = 90,70
 blue_hit = pygame.USEREVENT + 1
 red_hit = pygame.USEREVENT + 2
 
-blue_spaceship_image = pygame.image.load(r'C:\Users\moham\OneDrive\Desktop\Space_Game_Folder\Assets\blue.png')  #loads the image from the appropriate path 
+blue_spaceship_image = pygame.image.load("Assets/blue.png")  #loads the image from the appropriate path 
 blue_spaceship = pygame.transform.rotate(pygame.transform.scale(blue_spaceship_image, (spaceship_width, spaceship_height)), 270) # rotates and scales the image 
 
-red_spaceship_image = pygame.image.load(r'C:\Users\moham\OneDrive\Desktop\Space_Game_Folder\Assets\red.png')
+red_spaceship_image = pygame.image.load("Assets/red.png")
 red_spaceship = pygame.transform.rotate(pygame.transform.scale(red_spaceship_image, (spaceship_width, spaceship_height)), 90)
 
-space = pygame.transform.scale(pygame.image.load(r'C:\Users\moham\OneDrive\Desktop\Space_Game_Folder\Assets\spacemove.png'), (WIDTH, HEIGHT))
+space = pygame.transform.scale(pygame.image.load("Assets/spacemove.png"), (WIDTH, HEIGHT))
 
 def draw_window(blue, red, blue_bullets, red_bullets, blue_health, red_health):
     WIN.blit(space, (0,0))
