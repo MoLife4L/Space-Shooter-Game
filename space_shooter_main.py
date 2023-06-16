@@ -9,8 +9,8 @@ max_bullets = 10
 
 fps = 60
 
-bullet_sound = pygame.mixer.Sound(r'C:\Users\moham\OneDrive\Desktop\Space_Game_Folder\Assets\shot.mp3')
-explosion_sound = pygame.mixer.Sound(r'C:\Users\moham\OneDrive\Desktop\Space_Game_Folder\Assets\explosion.mp3')
+bullet_sound = pygame.mixer.Sound("Assets/shot.mp3")
+explosion_sound = pygame.mixer.Sound("Assets/explosion.mp3")
 
 def main():
     blue = pygame.Rect(100, 375, spaceship_width, spaceship_height)
